@@ -26,7 +26,11 @@ export default defineConfig({
       },
     }),
   ],
-  define: { 'process.env': {} },
+  define: { 'process.env': {
+    VUE_APP_APIURL:'http://localhost:3001/',
+    VUE_APP_APIVERSION:'api/',
+    VUE_APP_MAPSAPI:'AIzaSyArpkoI1-Smu1-FQPMqnpYABZB-N2N1wo8'
+  } },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
